@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+nav{
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap:40px;
+}
+
+nav a{
+    text-decoration: none;
+    color:white;
+    font-size: 14px;
+}
+
+nav a:hover{
+    color:darkorange;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.banner{
+    width: 100%;
+    height:300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    background-image: url("background.jpg");
+    background-size: 100%;
+    background-position: center center;
+ 
+
+}
+
+
+.banner h1{
+    color:white;
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.banner a{
+    color:white;
+    text-decoration: none;
+    width: 150px;
+    padding: 10px 15px;
+    border:1px solid white;
+    text-align: center;
+    font-size: 18px;
+    transition: all ease 1s;
+}
+
+.banner a:hover{
+    background-color: white;
+    color:black;
+   
+}
+
+.about-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 50px 0;
+    gap:30px;
+}
+
+.about-section h1{
+        color: black;
+        font-size: 30px;
+        font-weight: 100;
+        margin-top:20px;
+}
+
+
+.about-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 80px;
+    height: 300px;
+    background-color: #f2f2f2;
+}
+
+.about-container img{
+    width: 20%;
+}
+
+.right-div{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:40px;
+}
+
+.right-div p{
+    padding: 10px 0;
+}
+
+.right-div a{
+        color: black;
+        text-decoration: none;
+        width: 150px;
+        padding: 10px 15px;
+        border: 1px solid black;
+        text-align: center;
+        font-size: 18px;
+        transition: all ease 1s;
+}
+
+.right-div a:hover{
+    background-color: black;
+    color: white;
+}
+
+.astronauts-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    padding: 50px 0;
+    gap:50px
+}
+
+.astronauts-section h1{
+    color: black;
+        font-size: 30px;
+        font-weight: 100;
+        margin-top: 20px;
+}
+
+.astronauts-section div{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    background-color: darkorange;
+}
+
+.astronauts-section div img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+footer p{
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+@media(max-width:450px){
+
+    header {
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            gap:20px;
+        }
+    
+        nav {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+    
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 12px;
+        }
+    
+        nav a:hover {
+            color: darkorange;
+        }
+
+        main {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+    
+        .banner {
+            width: 100%;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            background-image: url("background.jpg");
+            background-size: 100%;
+            background-position: center center;
+         
+    
+        }
+    
+    
+        .banner h1 {
+            color: white;
+            font-size: 45px;
+            font-weight: 400;
+        }
+    
+        .banner a {
+            color: white;
+            text-decoration: none;
+            width: 150px;
+            padding: 10px 15px;
+            border: 1px solid white;
+            text-align: center;
+            font-size: 18px;
+            transition: all ease 1s;
+        }
+    
+        .banner a:hover {
+            background-color: white;
+            color: black;
+    
+        }
+    
+        .about-section {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 50px 0;
+            gap: 30px;
+        }
+    
+        .about-section h1 {
+            color: black;
+            font-size: 30px;
+            font-weight: 100;
+            margin-top: 20px;
+        }
+    
+    
+        .about-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 80px;
+            height: fit-content;
+            background-color: #f2f2f2;
+        }
+    
+        .about-container img {
+            width: 80%;
+        }
+    
+        .right-div {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+    
+        .right-div p {
+            padding: 10px 0;
+            width: 100%;
+        }
+    
+        .right-div a {
+            color: black;
+            text-decoration: none;
+            width: 150px;
+            padding: 10px 15px;
+            border: 1px solid black;
+            text-align: center;
+            font-size: 18px;
+            transition: all ease 1s;
+        }
+    
+        .right-div a:hover {
+            background-color: black;
+            color: white;
+        }
+    
+        .astronauts-section {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 50px 0;
+            gap: 50px
+        }
+    
+        .astronauts-section h1 {
+            color: black;
+            font-size: 30px;
+            font-weight: 100;
+            margin-top: 20px;
+        }
+    
+        .astronauts-section div {
+            width: 100%;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            padding: 40px;
+            background-color: darkorange;
+            height: fit-content;
+            gap:40px;
+        }
+    
+        .astronauts-section div img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid white;
+        }
+    
+    
+        footer {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+        }
+    
+        footer p {
+            font-size: 15px;
+            font-weight: 400;
+            text-align: center;
+        }
+
+}
